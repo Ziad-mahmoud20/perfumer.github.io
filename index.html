@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="images/fragance.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Me&You</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="images/fragance.png" alt="" width="20px"> Me & You
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#SALE" class="nav__link">SALE</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag' ></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="images/Dior_sauvage-removebg-preview.png" alt="" class="cart__img" width="500px">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Dior Sauvage</h3>
+                    <span class="cart__price">600 L.E</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">2</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="images/Stronger_With_You_Intensely-removebg-preview.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Stronger With You Intensely</h3>
+                    <span class="cart__price">600 L.E</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="images/Le_Male_Le_Parfum_Jean_Paul_Gaultier-removebg-preview.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Le Male Le Parfum Jean Paul Gaultier</h3>
+                    <span class="cart__price">800 L.E</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="images/Versace_Eros_Eau_de_Parfum-removebg-preview.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Versace Eros Eau de Parfum</h3>
+                    <span class="cart__price">700 L.E</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">4 items</span>
+            <span class="cart__prices-total">3300 L.E</span>
+        </div>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="images/Stronger_With_You_Intensely-removebg-preview.png" alt="" class="home__img" width="200px">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        Facebook
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        Twitter
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        Instagram
+                    </a>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">NEW Perfume COLLECTIONS <br> <span style="color: hsl(31, 76%, 74%);">Stronger With You Intensely</span></h1>
+                    <p class="home__description">
+                        إفتتاحية العطر الفلفل الوردي, العرعر و البنفسج; قلب العطر الطوفي, القرفة, الخزامي و المريمية; قاعدة العطر تتكون من الفانيليا, العنبر, حبوب التونكا و جلد الغزال (الجلد المدبوغ).
+                    </p>
+                    <span class="home__price">600 L.E</span>
+
+                    <div class="home__btns">
+                        <a href="#" class="button button--gray button--small">
+                            Discover
+                        </a>
+
+                        <button class="button home__button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section container" id="SALE">
+            <h2 class="section__title">
+                SALE
+            </h2>
+
+            <div class="featured__container grid">
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="images/SAUVAGE_ELIXIR-removebg-preview.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">SAUVAGE ELIXIR</h3>
+                        <p style="font-size: 14px;">إفتتاحية العطر القرفة, جوزه الطيب, الهيل و الجريب فروت; قلب العطر الخزامي; قاعدة العطر تتكون من العرقسوس, خشب الصندل, العنبر, الباتشولي و نجيل الهند من هايتي.</p>
+                        <br>
+                        <span class="featured__price"><del>1100 L.E</del><BR>600 L.E</span>
+                    </div>
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                    <a href="https://api.whatsapp.com/send?phone=01013386630" target="_blank" class="button featured__button">ADD TO CART</a>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="images/Erba_Pura_Xerjoff-removebg-preview.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Erba Pura Xerjoff</h3>
+                        <p style="font-size: 14px;">إفتتاحية العطر البرتقال الصقلي, برغموت كالابريا و الليمون الصقلي; قلب العطر الفواكه; قاعدة العطر تتكون من المسك الأبيض, فانيليا مدغشقر و العنبر.</p>
+                        <br>
+                        <span class="featured__price"><del>1600 L.E</del><br>800 L.E</span>
+                    </div>
+
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="woman images/valentino donna.png" alt="" class="featured__img" width="180px">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Valentino Donna Born In Roma</h3>
+                        <p style="font-size: 14px;">إفتتاحية العطر الكشمش الأسود, الفلفل الوردي و البرغموت; قلب العطر الياسمين, ياسمين سامباك و شاى الياسمين; قاعدة العطر تتكون من فانيليا بوربون, أخشاب الكشمير و أخشاب الغاياك.</p>
+                        <br>
+                        <span class="featured__price"><del>1700 L.E</del><br>900 L.E</span>
+                    </div>
+
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+            </div>
+        </section>
+        
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section container" id="products">
+            <h2 class="section__title">
+                Products
+            </h2>
+            <h2 class="section__title">
+                Men Collection
+            </h2>
+
+            <div class="products__container grid">
+                <article class="products__card">
+                    <img src="images/Acqua_di_Giò_Profumo-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Acqua di Giò Profumo</h3>
+                    <p style="font-size: 13.5px;">إفتتاحية العطر البرغموت والليمون واليوسفي التي تضيف لمسة منعشة وحيوية . يحتوي على مكونات بحرية خفيفة تضفي على العطر شعورًا بالانتعاش والحيوية.</p>
+                    <br>
+                    <span class="products__price">750 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="images/Allure_Homme_Sport_Chanel-removebg-preview.png" alt="" class="products__img" width="150px">
+
+                    <h3 class="products__title">Allure Homme Sport Chanel</h3>
+                    <p style="font-size: 13.5px;"> قلب العطر أصماغ التنوب, التوابل و راتنج الإليمي; قاعدة العطر تتكون من المسك الأبيض, الفلفل, خشب الأرز الأطلسي, نجيل الهند و حبوب التونكا</p>
+                    <br>
+                    <span class="products__price">700 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="images/Bleu_de_Chanel_Eau_de_Parfum-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Bleu de Chanel Eau de Parfum</h3>
+                    <p style="font-size: 13.5px;">قلب العطر الزنجبيل, جوزه الطيب, الياسمين و شمام; قاعدة العطر تتكون من البخور, العنبر, خشب الأرز, خشب الصندل, الباتشولي, خشب العنبر و اللابدانوم</p>
+                    <br>
+                    <span class="products__price">700 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="images/Dior_sauvage-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Dior sauvage</h3>
+                    <p style="font-size: 13.5px;">قلب العطر فلفل سيشوان, الخزامي, الفلفل الوردي, نجيل الهند, الباتشولي, إبره الراعي و الإليمي; قاعدة العطر تتكون من الأمبروكسان, خشب الأرز و اللابدانوم.</p>
+                    <br>
+                    <span class="products__price">600 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="images/Layton_de_Marly-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Layton de Marly</h3>
+                    <p style="font-size: 13.5px;">قلب العطر إبره الراعي, البنفسج و الياسمين; قاعدة العطر تتكون من الفانيليا, الهيل, خشب الصندل, الفلفل, أخشاب الغاياك و الباتشولي.</p>
+                    <br>
+                    <span class="products__price">750 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="images/Le_Beau_Le_Parfum_Jean_Paul_Gaultier-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Le Beau Le Parfum Jean Paul Gaultier</h3>
+                    <p style="font-size: 13.5px;">قلب العطر جوز الهند و الأخشاب; قاعدة العطر تتكون من حبوب التونكا, خشب الصندل, العنبر و الآمبرغريس.</p>
+                    <br>
+                    <span class="products__price">800 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="images/Le_Male_Elixir_Jean_Paul_Gaultier-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Le Male Elixir Jean Paul Gaultier</h3>
+                    <p style="font-size: 13.5px;">إفتتاحية العطر الخزامي و النعناع; قلب العطر الفانيليا و البنزوين - الجاوي; قاعدة العطر تتكون من العسل, حبوب التونكا و التبغ.</p>
+                    <br>
+                    <span class="products__price">800 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="images/Le_Male_Le_Parfum_Jean_Paul_Gaultier-removebg-preview.png" alt="" class="products__img">
+                    
+                    <h3 class="products__title">Le Male Le Parfum Jean Paul Gaultier</h3>
+                    <p style="font-size: 13.5px;">إفتتاحية العطر الهيل; قلب العطر الخزامي و السوسن; قاعدة العطر تتكون من الفانيليا, الروائح الشرقيه و الأخشاب.</p>
+                    <br>
+                    <span class="products__price">800 L.E</span>
+                    
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="images/Ultra_Male_Jean_Paul_Gaultier-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Ultra Male Jean Paul Gaultier</h3>
+                    <p style="font-size: 13.5px;">المكونات العليا هي الكمثرى واللافندر والنعناع والبرغموت والليمون; المكونات الأساسية هي قشر الفانيليا السوداء والعنبر والبتشولي والأرز.</p>
+                    <br>
+                    <span class="products__price">800 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="images/One_million-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">One million</h3>
+                    <p style="font-size: 13.5px;">نفحات من التوابل مثل الهيل أو القرفة أو زهور مثل الورد. هذه المكونات تضيف التعقيد والأناقة إلى الرائحة .</p>
+                    <br>
+                    <span class="products__price">750 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="images/Tom_ford_Ombré_Leather-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Tom ford Ombré Leather</h3>
+                    <p style="font-size: 13.5px;">إفتتاحية العطر الهيل; قلب العطر الجلود و ياسمين سامباك; قاعدة العطر تتكون من العنبر, الطحالب و الباتشولي.</p>
+                    <br>
+                    <span class="products__price">600 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="images/Tom_ford_tobacco_vanille-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Tom ford tobacco vanille</h3>
+                    <p style="font-size: 13.5px;">رائحة عطرية مميزة لا تنسى، كما يمكن أن تثير العطور المنبثقة من التوابل والروائح الخشبية أيضًا طابعًا خشبيًا آسرًا وحسيًا.</p>
+                    <br>
+                    <span class="products__price">800 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="images/Valentino_Uomo_Intense-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Valentino Uomo Intense</h3>
+                   <p style="font-size: 13.5px;">إفتتاحية العطر الماندرين (اليوسفي) و المريمية; قلب العطر السوسن و حبوب التونكا; قاعدة العطر تتكون من الفانيليا و الجلود.</p>
+                   <br>
+                    <span class="products__price">800 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="images/Versace_Eros_Eau_de_Parfum-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Versace Eros Eau de Parfum</h3>
+                    <p style="font-size: 13.5px;">قلب العطر الأمبروكسان, إبره الراعي و المريمية; قاعدة العطر تتكون من الفانيليا, خشب الأرز, خشب الصندل, البرتقال المر, الباتشولي و الجلود.</p>
+                    <br>
+                    <span class="products__price">700 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="images/WhatsApp_Image_2024-09-03_at_22.31.54-removebg-preview.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Y Eau de Parfum Yves Saint Laurent</h3>
+                    <p style="font-size: 13.5px;">قلب العطر المريمية, توت العرعر و إبره الراعي; قاعدة العطر تتكون من خشب العنبر, حبوب التونكا, خشب الأرز, نجيل الهند و اللبان.</p>
+                    <br>
+                    <span class="products__price">700 L.E</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h2 class="section__title">
+                Woman Collection
+            </h2>
+            <div class="products__container grid">
+                <article class="products__card">
+                    <img src="woman images/burberry her.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Burberry Her</h3>
+                    <p style="font-size: 13.5px;">قلب العطر البنفسج و الياسمين; قاعدة العطر تتكون من المسك, الفانيليا, أخشاب الكشمير, الأخشاب, العنبر, طحلب البلوط (طحلب السنديان) و الباتشولي.</p>
+                    <br>
+                    <span class="products__price">800 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/coco mademoiselle chanel.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Coco Mademoiselle Chanel</h3>
+                    <p style="font-size: 13.5px;">قلب العطر الورد التركي, الياسمين, الميموزا و الإيلنغ; قاعدة العطر تتكون من الباتشولي, المسك الأبيض, الفانيليا, نجيل الهند, حبوب التونكا و الجاوشير</p>
+                    <br>
+                    <span class="products__price">850 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/crystal noir.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Crystal Noir Versace</h3>
+                    <p style="font-size: 13.5px;">إفتتاحية العطر الفلفل, الزنجبيل و الهيل; قلب العطر جوز الهند, الغاردينيا, زهر البرتقال و الفاوانيا; قاعدة العطر تتكون من خشب الصندل, المسك و العنبر.</p>
+                    <br>
+                    <span class="products__price">850 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/delina exclusif.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Delina Exclusif Parfums de Marly</h3>
+                    <p style="font-size: 13.5px;">قلب العطر الورد التركي, العود و البخور; قاعدة العطر تتكون من الفانيليا, العنبر, الأخشاب, المسك, نجيل الهند و إيفرنيل.</p>
+                    <br>
+                    <span class="products__price">850 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/good girl.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Good Girl Suprême Carolina Herrera</h3>
+                    <p style="font-size: 13.5px;">إفتتاحية العطر ثمار الغابة و الفل; قلب العطر حبوب التونكا و مسك الروم; قاعدة العطر من نجيل الهند.</p>
+                    <br>
+                    <span class="products__price">1000 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/baccarat rouge.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Baccarat Rouge 540 Extrait de Parfum Maison</h3>
+                    <p style="font-size: 13.5px;">إفتتاحية العطر اللوز المر و الزعفران; قلب العطر الفل, خشب الأرز و الورد; قاعدة العطر تتكون من الآمبرغريس, الأخشاب, المسك و الكاراميل.</p>
+                    <br>
+                    <span class="products__price">800 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/la belle le parfum.png" alt="" class="products__img">
+
+                    <h3 class="products__title">La Belle Le Parfum Jean Paul Gaultier</h3>
+                    <p style="font-size: 13.5px;">إفتتاحية العطر الكمثري; قلب العطر حبوب التونكا و الياسمين; قاعدة العطر من الفانيليا</p>
+                    <br>
+                    <span class="products__price">1000 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/libre le parfum.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Libre Le Parfum Yves Saint Laurent</h3>
+                    <p style="font-size: 13.5px;">قلب العطر زهر البرتقال و الخزامي; قاعدة العطر تتكون من فانيليا بوربون, العسل, حبوب التونكا و نجيل الهند.</p>
+                    <br>
+                    <span class="products__price">900 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/lost cherry tom ford.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Lost Cherry Tom Ford</h3>
+                    <p style="font-size: 13.5px;">قلب العطر الكرز الحامض, البرقوق, الورد التركي و ياسمين سامباك; قاعدة العطر تتكون من الفانيليا, حبوب التونكا, القرفة, بلسم بيرو, البنزوين - الجاوي .</p>
+                    <br>
+                    <span class="products__price">850 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/hypnotic poison dior.png" alt="" class="products__img">
+
+                    <h3 class="products__title">hypnotic poison dior</h3>
+                    <p style="font-size: 13.5px;">قلب العطر خشب الورد البرازيلي, الياسمين, الكاراوية, مسك الروم, الورد و زنابق الوادي; قاعدة العطر تتكون من الفانيليا, اللوز, خشب الصندل و المسك.</p>
+                    <br>
+                    <span class="products__price">850 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/scandal.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Scandal Le Parfum Jean Paul Gaultier</h3>
+                    <p style="font-size: 13.5px;">إفتتاحية العطر الياسمين; قلب العطر الكاراميل و الملح; قاعدة العطر من الفانيليا</p>
+                    <br>
+                    <span class="products__price">1000 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/si passione.png" alt="" class="products__img">
+    
+                    <h3 class="products__title">Sì Passione Giorgio Armani</h3>
+                    <p style="font-size: 13.5px;">قلب العطر الأناناس, الورد, الياسمين و الهيلوتروب; قاعدة العطر تتكون من الفانيليا, خشب الأرز, الباتشولي و خشب العنبر.</p>
+                    <br>
+                    <span class="products__price">700 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/rose-removebg-preview.png" alt="" class="products__img">
+    
+                    <h3 class="products__title">Roses Vanille Mancera</h3>
+                    <p style="font-size: 13.5px;">إفتتاحية العطر الليمون الإيطالي; قلب العطر الورد التركي; قاعدة العطر تتكون من الفانيليا, المسك الأبيض و خشب الأرز.</p>
+                    <br>
+                    <span class="products__price">800 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="woman images/WhatsApp_Image_2024-09-03_at_22.23.34-removebg-preview.png" alt="" class="products__img">
+    
+                    <h3 class="products__title">Black Opium Extreme Yves Saint Laurent</h3>
+                    <p style="font-size: 13.5px;">إفتتاحية العطر القهوه و الكاكاو; قلب العطر ياسمين سامباك و زهر البرتقال; قاعدة العطر تتكون من فانيليا بوربون و الباتشولي.</p>
+                    <br>
+                    <span class="products__price">900 L.E</span>
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <!-- <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best Perfumes that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2024</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="images/testimonial1.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Lee Doe</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best Perfumes that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2024</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="images/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Samantha Mey</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best Perfumes that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2024</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="images/testimonial3.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Raul Zaman</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div>
+                </div> -->
+
+                <!-- <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="images/Stronger With You Intensely.jpeg" alt="" class="testimonial__img">
+                </div> -->
+            </div>
+        </section>
+
+        <!--==================== NEW ====================-->
+        <section class="new section container" id="new">
+            <h2 class="section__title">
+                New Arrivals
+            </h2>
+            
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="images/The_One_Dolce_Gabbana-removebg-preview.png" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">The One Dolce&Gabbana</h3>
+                                <p style="font-size: 13.5px;">قلب العطر الزنبق, البرقوق, الياسمين و زنابق الوادي; قاعدة العطر تتكون من الفانيليا, العنبر, المسك و نجيل الهند.</p>
+                                <br>
+                                <span class="new__price">800 L.E</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="images/Creed_Aventus-removebg-preview.png" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Creed Aventus</h3>
+                                <p style="font-size: 13.5px;">قلب العطر الأناناس, الباتشولي و الياسمين المغربي; قاعدة العطر تتكون من أخشاب البتولا, المسك, طحلب البلوط (طحلب السنديان), الأمبروكسان و خشب الأرز.</p>
+                                <br>
+                                <span class="new__price">800 L.E</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="images/Spicebomb_Extreme-removebg-preview.png" alt="" class="new__img" width="200px">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Spicebomb Extreme</h3>
+                                <p style="font-size: 13.5px;">يتميز العطر برائحة مميزة من الفلفل الحلو و الأسود و القرفة و الزعفران بالإضافة لنفحات من الفانيلا و التبغ و لمسة خشبية عنبرية. يأتي العطر معبأ بقالب مميز على شكل قنبلة</p>
+                                <br>
+                                <span class="new__price">700 L.E</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="woman images/intense dolce.png" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Intense Dolce&Gabbana</h3>
+                                <p style="font-size: 13.5px;">إفتتاحية العطر النيرولي و الماندرين الأخضر; قلب العطر زهر البرتقال و مسك الروم; قاعدة العطر تتكون من المارشميللو و خشب الصندل.</p>
+                                <br>
+                                <span class="new__price">800 L.E</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>                                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEWSLETTER ====================-->
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
+                    <p class="newsletter__description">
+                        Don't miss out on your discounts. Subscribe to our email 
+                        newsletter to get the best offers, discounts, coupons, 
+                        gifts and much more.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our information</h3>
+
+                <ul class="footer__list">
+                    <li>Egypt - cairo</li>
+                    <li>Helwan</li>
+                    <li>01013386630</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Road bikes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Mountain bikes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Electric</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; Bedimcode. All rigths reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+</body>
+</html>
